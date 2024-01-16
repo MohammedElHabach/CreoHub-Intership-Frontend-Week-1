@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Architecture</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+  <body>
+    <header>
+      <div>
+        <a href="index.html">
+          <img class="logo" src="./assets/logo.png" alt="logo" />
+        </a>
+      </div>
+
+      <div onclick="handleBurgerClick()" class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html" class="active">About</a></li>
+          <li><a href="#testimonials-section" class="active">Testimonials</a></li>
+          <li><a href="#contact" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="banner-section">
+        <img class="banner-img" src="./assets/banner6.jpg" alt="banner">
+        <h1 class="banner-text ">Building Dreams, Shaping Tomorrow.</h1>
+        <p class="banner-paragraph "> Every design, every structure, and every blueprint is a testament to our commitment to transforming dreams into tangible realities.
+            With a keen eye for innovation and a deep understanding of form and function, we embark on a journey to shape a better tomorrow through the language of architecture. </p>
+    </section>
+
+    <section id="testimonials-section" class="testimonials-section">
+        <h1 class="testimonials-title">Testimonials</h1>
+        <div class="card-container">
+            <figure class="snip1192">
+                <blockquote>Calvin: Sometimes when I'm talking with others, my words can't keep up with my thoughts. I wonder why we think faster than we speak. Hobbes: Probably so we can think twice. </blockquote>
+                <div class="author">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample1.jpg" alt="sq-sample1"/>
+                  <h5>Pelican Steve <span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+
+              <figure class="snip1192 hover">
+                <blockquote>Thank you. before I begin, I'd like everyone to notice that my report is in a professional, clear plastic binder...When a report looks this good, you know it'll get an A. That's a tip kids. Write it down.</blockquote>
+                <div class="author">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample24.jpg" alt="sq-sample24"/>
+                  <h5>Max Conversion<span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+
+              <figure class="snip1192">
+                <blockquote>My behaviour is addictive functioning in a disease process of toxic co-dependency. I need holistic healing and wellness before I'll accept any responsibility for my actions.</blockquote>
+                <div class="author">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample29.jpg" alt="sq-sample29"/>
+                  <h5>Eleanor Faint<span> LittleSnippets</span></h5>
+                </div>
+              </figure>
+              
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h1 class="contact-title">Contact Us</h1>
+
+        <div class="contact-container">
+            <div class="left-box">
+                <h4>Quick Contact</h4>
+                <p>Get to know our office and where to visit us. This is just an example of information about our activities.</p>
+            </div>
+
+            <form class="form-container">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+                <textarea
+                  placeholder="Message"
+                  cols="30"
+                  rows="10"
+                  class="textarea"
+                  required
+                ></textarea>
+                <button  class="sendBtn">
+                  Send Message
+                </button>
+              </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="architecture">
+                <h3>Architecture</h3>
+                <p>Every design, every structure, and every blueprint is a testament to our commitment to transforming dreams into tangible realities.</p>
+            </div>
+
+            <div class="reach-us">
+                <h3>Reach Us</h3>
+                <ul>
+                    <li><a  href="#contact">Contact</a></li>
+                    <li class="footer-about"><a  href="index.html">About</a></li>
+                </ul>
+
+            </div>
+
+            <div class="categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a  href="">Residential</a></li>
+                    <li class="footer-categ"><a  href="">Commercial</a></li>
+                </ul>
+            </div>
+
+            <div class="follow-us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+      function handleBurgerClick() {
+        navBar = document.querySelector(".nav-bar");
+        bannerText = document.querySelector(".banner-text");
+        bannerParagraph = document.querySelector(".banner-paragraph");
+        navBar.classList.toggle("active");
+        bannerText.classList.toggle("active");
+        bannerParagraph.classList.toggle("active");
+
+        
+      }
+    </script>
+  </body>
+</html>
