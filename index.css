@@ -308,7 +308,7 @@ figure.snip1192 .author h5 span {
 
 /*###################  Contact   ##########################*/
 .contact-section {
-  height: 70vh;
+  min-height: 75vh;
   background-color: #f2f5fc;
 }
 
@@ -418,7 +418,6 @@ figure.snip1192 .author h5 span {
   background-color: black;
   color: white;
   height: 20rem;
-  margin-top: 2rem;
 }
 
 .footer-container h3 {
