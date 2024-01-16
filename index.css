@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #fefefe;
+  background: #f2f5fc;
 }
 
 /*###################  Menu  ##########################*/
@@ -308,7 +308,7 @@ figure.snip1192 .author h5 span {
 
 /*###################  Contact   ##########################*/
 .contact-section {
-  height: 75vh;
+  height: fit-content;
   background-color: #f2f5fc;
 }
 
@@ -364,7 +364,7 @@ figure.snip1192 .author h5 span {
   color: #000000;
   font-size: 22px;
   font-weight: 400;
-  height: 10rem;
+  height: 140px;
   line-height: 1.4;
   opacity: 1;
   padding: 10px 20px 10px 20px;
@@ -387,6 +387,7 @@ figure.snip1192 .author h5 span {
   font-size: 18px;
   width: 13rem;
   margin-top: 1rem;
+  margin-bottom: 3rem;
   border-radius: 4px;
   cursor: pointer;
   text-align: left;
@@ -406,6 +407,10 @@ figure.snip1192 .author h5 span {
     width: 80vw;
   }
 
+  .contact-section {
+    /* height: 116vh; */
+  }
+
   .sendBtn {
     margin: 1.2rem auto 0 auto;
   }
@@ -418,6 +423,7 @@ figure.snip1192 .author h5 span {
   background-color: black;
   color: white;
   height: 20rem;
+  margin-top: 1rem;
 }
 
 .footer-container h3 {
