@@ -26,10 +26,10 @@
 
       <nav class="nav-bar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="index.html" class="active">About</a></li>
-          <li><a href="#testimonials-section" class="active">Testimonials</a></li>
-          <li><a href="#contact" class="active">Contact</a></li>
+          <li><a onclick="handleNavLinkClick()" href="index.html" >Home</a></li>
+          <li><a onclick="handleNavLinkClick()" href="index.html" >About</a></li>
+          <li><a onclick="handleNavLinkClick()" href="#testimonials-section" >Testimonials</a></li>
+          <li><a onclick="handleNavLinkClick()" href="#contact" >Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -153,6 +153,17 @@
 
         
       }
+
+      function handleNavLinkClick() {
+          navBar = document.querySelector(".nav-bar");
+          bannerText = document.querySelector(".banner-text");
+          bannerParagraph = document.querySelector(".banner-paragraph");
+
+          // Remove the "active" class when clicking on a link
+          navBar.classList.remove("active");
+          bannerText.classList.remove("active");
+          bannerParagraph.classList.remove("active");
+        }
     </script>
   </body>
 </html>

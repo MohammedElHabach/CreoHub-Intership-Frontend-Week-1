@@ -173,19 +173,19 @@ header {
 }
 
 @media screen and (max-width: 769px) {
-    .banner-text {
-      top: 15rem;
-    }
-  
-    .banner-paragraph {
-      top: 23rem;
-    }
-  
-    .banner-text,
-    .banner-paragraph {
-      left: 2rem;
-    }
+  .banner-text {
+    top: 15rem;
   }
+
+  .banner-paragraph {
+    top: 23rem;
+  }
+
+  .banner-text,
+  .banner-paragraph {
+    left: 2rem;
+  }
+}
 
 @media screen and (max-width: 682px) {
   .banner-paragraph {
@@ -407,10 +407,6 @@ figure.snip1192 .author h5 span {
     width: 80vw;
   }
 
-  .contact-section {
-    /* height: 116vh; */
-  }
-
   .sendBtn {
     margin: 1.2rem auto 0 auto;
   }
@@ -474,10 +470,10 @@ figure.snip1192 .author h5 span {
 }
 
 @media screen and (max-width: 630px) {
-    .footer-container{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 60rem;
-    }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60rem;
   }
+}
