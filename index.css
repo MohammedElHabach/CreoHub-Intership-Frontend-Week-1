@@ -7,6 +7,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #f2f5fc;
 }
@@ -20,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 6rem;
+  padding: 0 6.3rem;
 }
 
 .logo {
@@ -122,15 +126,16 @@ header {
 
 .banner-text {
   position: absolute;
-  left: 10.5rem;
-  top: 19rem;
+  left: 8%;
+  top: 31%;
   font-size: 2.5rem;
 }
 
 .banner-paragraph {
   position: absolute;
-  left: 10.5rem;
-  top: 24rem;
+
+  left: 8%;
+  top: 39%;
   font-size: 1.11rem;
   width: 33%;
   text-align: justify;
@@ -140,77 +145,74 @@ header {
 .banner-img {
   height: 92vh;
   width: 100%;
+  /* object-fit: cover; */
 }
 
-@media screen and (max-width: 1238px) {
+@media screen and (max-width: 1368px) {
   .banner-text {
     width: 50%;
   }
 
   .banner-paragraph {
-    margin-top: 2rem;
-  }
-
-  .banner-text,
-  .banner-paragraph {
-    left: 5rem;
+    top: 44%;
   }
 }
 
 @media screen and (max-width: 1104px) {
-  .banner-text {
-    top: 15rem;
-  }
-
   .banner-paragraph {
-    top: 20rem;
+    top: 46%;
   }
 
   .banner-text,
   .banner-paragraph {
-    left: 2rem;
+    left: 7%;
   }
 }
 
 @media screen and (max-width: 769px) {
-  .banner-text {
-    top: 15rem;
+  .banner-paragraph {
+    top: 51%;
+  }
+}
+
+@media screen and (max-width: 961px) {
+  .banner-img {
+    opacity: 0.5;
   }
 
   .banner-paragraph {
-    top: 23rem;
-  }
-
-  .banner-text,
-  .banner-paragraph {
-    left: 2rem;
+    width: 50%;
+    font-weight: 600;
   }
 }
 
 @media screen and (max-width: 682px) {
   .banner-paragraph {
-    display: none;
+    top: 56.5%;
   }
 }
 
-@media screen and (max-width: 534px) {
-  .banner-text {
-    left: 1rem;
+@media screen and (max-width: 550px) {
+  .banner-paragraph {
+    display: none;
+  }
+
+  .banner-img {
+    opacity: 1;
   }
 }
 
 /*###################  Testimonials  ##########################*/
 
-.testimonials-section {
-  min-height: 70vh;
-  background-color: #f2f5fc;
+.testimonials-section,
+.contact-section {
+  padding-top: 4rem;
 }
 
 .testimonials-title,
 .contact-title {
   text-align: center;
   font-size: 30px;
-  padding-top: 4rem;
 }
 
 .card-container {
@@ -307,14 +309,10 @@ figure.snip1192 .author h5 span {
 }
 
 /*###################  Contact   ##########################*/
-.contact-section {
-  height: fit-content;
-  background-color: #f2f5fc;
-}
-
 .contact-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 3rem;
   margin-top: 3rem;
 }
@@ -397,14 +395,10 @@ figure.snip1192 .author h5 span {
   background-color: #4193ea;
 }
 
-@media screen and (max-width: 620px) {
-  .left-box {
-    display: none;
-  }
-
+@media screen and (max-width: 1024px) {
   .form-container input,
   .textarea {
-    width: 80vw;
+    width: 50vw;
   }
 
   .sendBtn {
@@ -412,9 +406,41 @@ figure.snip1192 .author h5 span {
   }
 }
 
+@media screen and (max-width: 784px) {
+  .contact-container .left-box {
+    height: 9rem;
+  }
+
+  .form-container input,
+  .textarea {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .sendBtn {
+    margin: 1.2rem auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .form-container input,
+  .textarea {
+    width: 92vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form-container input,
+  .textarea {
+    width: 95vw;
+  }
+}
+
 /*###################  Footer   ##########################*/
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   background-color: black;
   color: white;
@@ -423,9 +449,12 @@ figure.snip1192 .author h5 span {
 }
 
 .footer-container h3 {
-  border-bottom: 2px solid white;
+  /* border-bottom: 2px solid white; */
   padding-top: 3.5rem;
   padding-bottom: 0.3rem;
+  text-decoration: underline;
+  text-underline-offset: 8px; /* Set your desired offset */
+  text-decoration-thickness: 2px;
 }
 
 .architecture p {
@@ -459,21 +488,50 @@ figure.snip1192 .author h5 span {
   color: #4193ea;
 }
 
+.categories ul li a:hover {
+  cursor: default;
+}
+
 .social-icons {
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
 }
 
 .social-icons i:hover {
   color: #4193ea;
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 600px) {
   .footer-container {
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    height: 60rem;
+    justify-content: center;
+    height: 38rem;
+  }
+
+  .architecture p {
+    width: auto;
+  }
+
+  .architecture,
+  .reach-us,
+  .follow-us,
+  .categories {
+    width: 20rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 326px) {
+  .architecture,
+  .reach-us,
+  .follow-us,
+  .categories {
+    width: 15rem;
+    text-align: center;
+  }
+
+  .contact-container .left-box {
+    width: 18rem;
   }
 }
