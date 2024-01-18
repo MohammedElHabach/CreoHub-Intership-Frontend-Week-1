@@ -278,6 +278,7 @@ header {
 
 figure.snip1192:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 figure.snip1192 {
