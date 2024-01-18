@@ -27,7 +27,6 @@
       <nav class="nav-bar">
         <ul>
           <li><a onclick="handleNavLinkClick()" href="index.html" >Home</a></li>
-          <li><a onclick="handleNavLinkClick()" href="index.html" >About</a></li>
           <li><a onclick="handleNavLinkClick()" href="#testimonials-section" >Testimonials</a></li>
           <li><a onclick="handleNavLinkClick()" href="#contact" >Contact</a></li>
         </ul>
@@ -116,8 +115,7 @@
             <div class="reach-us">
                 <h3>Reach Us</h3>
                 <ul>
-                    <li><a  href="#contact">Contact</a></li>
-                    <li class="footer-about"><a  href="index.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
 
@@ -146,9 +144,12 @@
         navBar = document.querySelector(".nav-bar");
         bannerText = document.querySelector(".banner-text");
         bannerParagraph = document.querySelector(".banner-paragraph");
+        bannerImage =  document.querySelector(".banner-img");
         navBar.classList.toggle("active");
         bannerText.classList.toggle("active");
         bannerParagraph.classList.toggle("active");
+        bannerImage.classList.toggle("active");
+
 
         
       }
@@ -157,11 +158,14 @@
           navBar = document.querySelector(".nav-bar");
           bannerText = document.querySelector(".banner-text");
           bannerParagraph = document.querySelector(".banner-paragraph");
+          bannerImage =  document.querySelector(".banner-img");
 
           // Remove the "active" class when clicking on a link
           navBar.classList.remove("active");
           bannerText.classList.remove("active");
           bannerParagraph.classList.remove("active");
+          bannerImage.classList.remove("active");
+
         }
     </script>
   </body>
