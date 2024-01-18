@@ -200,7 +200,7 @@ header {
 
 @media screen and (max-width: 645px) {
   .banner-text {
-    width: 90%;
+    width: 80%;
   }
   .banner-paragraph {
     top: 48%;
@@ -213,6 +213,21 @@ header {
   }
   .banner-paragraph {
     top: 42%;
+  }
+}
+
+@media screen and (max-width: 528px) {
+  .banner-paragraph {
+    width: 74%;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .banner-text {
+    width: 91%;
+  }
+  .banner-paragraph {
+    width: 80%;
   }
 }
 
