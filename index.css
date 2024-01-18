@@ -258,8 +258,7 @@ header {
 /*###################  Testimonials  ##########################*/
 .testimonials-section,
 .contact-section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 6rem;
 }
 
 .testimonials-title,
@@ -277,6 +276,10 @@ header {
   gap: 1rem;
 }
 
+figure.snip1192:hover {
+  transform: scale(1.1);
+}
+
 figure.snip1192 {
   font-family: "Raleway", Arial, sans-serif;
   position: relative;
@@ -287,6 +290,7 @@ figure.snip1192 {
   width: 100%;
   color: #333;
   text-align: left;
+  transition: transform 0.3s ease;
   box-shadow: none !important;
 }
 
